@@ -166,5 +166,190 @@ console.log('Hello');
 
 // ---------------------------------------------------------------------------------------------------------////
 
+// ---------------------------------------------------------------------------------------------------------////
+
+//Напиши функцию findLongestWord(string) которая принимает произвольную строку состоящую только из слов разделённых 
+//пробелом(параметр string) и возвращает самое длинное слово в этой строке.
+
+//Тесты
+//Объявлена функция findLongestWord(string)
+//Вызов функции findLongestWord("The quick brown fox jumped over the lazy dog") возвращает jumped
+//Вызов функции findLongestWord("Google do a roll") возвращает Google
+// Вызов функции findLongestWord("May the force be with you") возвращает force
+// Вызов функции findLongestWord() со случайной строкой возвращает правильное значение
+
+// const add = function findLongestWord(string) {
+//     const arrayWords = string.split(' ');
+//     let biggestWord = arrayWords[0];
+//     for (let i = 0; i < arrayWords.length; i += 1) {
+//         if (arrayWords[i].length > biggestWord.length) {
+//             biggestWord = arrayWords[i];
+//         }
+//     }
+//     return biggestWord;
+// }
+        
+// const newResyltat = add ("The quick brown fox jumped over the lazy dog");
+// console.log("resalt:", newResyltat) 
+
+// ---------------------------------------------------------------------------------------------------------////
+// ---------------------------------------------------------------------------------------------------------////
+
+//Дополни код функции createArrayOfNumbers(min, max) так, чтобы она возвращала массив всех целых чисел от значения min до max.
+
+// Тесты
+// Объявлена функция createArrayOfNumbers(min, max)
+// Вызов функции createArrayOfNumbers(1, 3) возвращает [1, 2, 3]
+// Вызов функции createArrayOfNumbers(14, 17) возвращает [14, 15, 16, 17]
+// Вызов функции createArrayOfNumbers(29, 34) возвращает [29, 30, 31, 32, 33, 34]
+// Вызов функции createArrayOfNumbers() со случайными min и max возвращает правильный массив
+// В цикле for использовался метод push
+
+//  const add = function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//      for(let i = min;  i <= max; i++)
+//     numbers.push(i);
+
+//   // Change code above this line
+//   return numbers;
+// }
+        
+//  const newResyltat = add (14, 17);
+//  console.log("resalt:", newResyltat) 
+
+// ---------------------------------------------------------------------------------------------------------////
+
+// ---------------------------------------------------------------------------------------------------------////
+
+//Напиши функцию filterArray(numbers, value), которая принимает массив чисел (параметр numbers) и возвращает новый массив,
+//  в котором будут только те элементы массива numbers, которые больше чем значение параметра value(число).
+
+// Тесты
+// Объявлена функция filterArray(numbers, value)
+// Вызов функции filterArray([1, 2, 3, 4, 5], 3) возвращает [4, 5]
+// Вызов функции filterArray([1, 2, 3, 4, 5], 4) возвращает [5]
+// Вызов функции filterArray([1, 2, 3, 4, 5], 5) возвращает []
+// Вызов функции filterArray([12, 24, 8, 41, 76], 38) возвращает [41, 76]
+// Вызов функции filterArray([12, 24, 8, 41, 76], 20) возвращает [24, 41, 76]
+// Вызов функции filterArray() со случайным массивом и числом возвращает правильный массив
+// В цикле for использовался метод push
+
+//   const add = function filterArray(numbers, value) {
+//    // Change code below this line
+//       const masiv = [];
+//       for (let i = 0; i < numbers.length; i += 1) {
+//           console.log(numbers[i]);  
+//           if (numbers[i] > value) {
+//               masiv.push(numbers[i]);
+//           }
+//       }
+// return masiv;
+//   // Change code above this line
+// }
+//   const newResyltat = add ([1, 2, 3, 4, 5], 3);
+//   console.log("resalt:", newResyltat) 
+
+// ---------------------------------------------------------------------------------------------------------////
+
+// ---------------------------------------------------------------------------------------------------------////
+
+// Общими элементами массивов называют те элементы, которые присутствуют во всех массивах.
+
+// Например, в двух массивах[1, 3, 5] и[0, 8, 5, 3] общими будут числа 3 и 5, т.к.они присутствуют в обоих исходных массивах.
+// А числа 0, 1 и 8 присутствуют только в одном из массивов.
+// Напиши функцию getCommonElements(array1, array2) которая получает два массива произвольной длины в параметры array1 и array2,
+// и возвращает новый массив, состоящий из тех элементов, которые присутствуют в обоих исходных массивах.
+
+// Тесты
+// Объявлена функция getCommonElements(array1, array2)
+// Вызов getCommonElements([1, 2, 3], [2, 4]) возвращает [2]
+// Вызов getCommonElements([1, 2, 3], [2, 1, 17, 19]) возвращает [1, 2]
+// Вызов getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]) возвращает [12, 27, 3]
+// Вызов getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]) возвращает [10, 30, 40]
+// Вызов getCommonElements([1, 2, 3], [10, 20, 30]) возвращает []
+// Вызов функции getCommonElements() со случайными двумя массивами возвращает правильный массив
+// В цикле for использовались методы includes и push
+
+//    const add = function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   const newArray = [];
+//   for (const array of array1) {
+//     if (array2.includes(array)) {
+//       newArray.push(array);
+//     }
+//   }
+//   return newArray
+//  // Change code above this line
+// }
+
+//   const newResyltat = add ([1, 2, 3], [2, 4]);
+//   console.log("resalt:", newResyltat) 
+
+// ---------------------------------------------------------------------------------------------------------////
+
+// ---------------------------------------------------------------------------------------------------------////
+
+// // Напиши функцию getEvenNumbers(start, end) которая возвращает массив всех чётных чисел от start до end. 
+// Чётным считается число которое делится на 2 без остатка(10 % 2 === 0).
+
+// Тесты
+// Объявлена функция getEvenNumbers(start, end)
+// Вызов функции getEvenNumbers(2, 5) возвращает [2, 4]
+// Вызов функции getEvenNumbers(3, 11) возвращает [4, 6, 8, 10]
+// Вызов функции getEvenNumbers(6, 12) возвращает [6, 8, 10, 12]
+// Вызов функции getEvenNumbers(8, 8) возвращает [8]
+// Вызов функции getEvenNumbers(7, 7) возвращает []
+// Вызов функции getEvenNumbers() со случайными start и end возвращает правильный массив
+
+//    const add = function getEvenNumbers(start, end) {
+//    // Change code below this line
+//     const newArray = [];
+//        for (let i = start; i <= end; i++)
+//            if ([i] % 2 === 0) {
+//                newArray.push(i);
+//                console.log(newArray)
+//            }
+// return newArray
+//     // Change code above this line
+//   }
+
+//    const newResyltat = add (2, 5);
+//    console.log("resalt:", newResyltat) 
+
+// ---------------------------------------------------------------------------------------------------------////
+
+// ---------------------------------------------------------------------------------------------------------////
+
+// Напиши функцию includes(array, value), которая делает тоже самое, что и метод массива массив.includes(значение) - проверяет,
+// есть ли в массиве array значение value, возвращая true если есть и false в противном случае.
+// При выполнении этой задачи в теле функции includes() нельзя использовать метод массив.includes(значение).
+// Тесты
+// Объявлена функция includes(array, value)
+// Вызов includes([1, 2, 3, 4, 5], 3) возвращает true
+// Вызов includes([1, 2, 3, 4, 5], 17) возвращает false
+// Вызов includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter") возвращает true
+// Вызов includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus") возвращает false
+// Вызов includes(["apple", "plum", "pear", "orange"], "plum") возвращает true
+// Вызов includes(["apple", "plum", "pear", "orange"], "kiwi") возвращает false
+// Вызов includes() для случайного массива со случайным value возвращает верный boolean
+// В функции includes используется for, return, но не метод массива includes
+
+//    const add = function includes(array, value) {
+//   // Change code below this line
+// for(let i = 0; i < array.length; i += 1){
+// 	if(array[i] === value){
+// 		return true;}
+//     }
+	
+//      return false;
+//   // Change code above this line
+// }
+
+//    const newResyltat = add ([1, 2, 3, 4, 5], 3);
+//    console.log("resalt:", newResyltat) 
+
+// ---------------------------------------------------------------------------------------------------------////
+
 
 console.log('Hello');

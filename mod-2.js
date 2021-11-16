@@ -4,7 +4,7 @@ console.log('Hello');
 
 // Сервису гравировки украшений нужна функция, которая бы автоматически считала цену гравировки, в зависимости
 //  от количества слов и цены за слово.
-// Объявлена функция calculateEngravingPrice(message, pricePerWord).Эта функция принимает строку, состоящую из 
+// Объявлена функция calculateEngravingPrice(message, pricePerWord).Эта функция принимает строку, состоящую из
 // слов разделённых только пробелами(параметр message) и цену гравировки одного слова(параметр pricePerWord).
 // Напиши тело функции, чтобы она возвращала общую стоимость гравировки всех слов в строке.
 // Тесты
@@ -16,9 +16,8 @@ console.log('Hello');
 
 // const add = function calculateEngravingPrice(message, pricePerWord) {
 //     // Change code below this line
-  
-//   return message.split(" ").length * pricePerWord
 
+//   return message.split(" ").length * pricePerWord
 
 //     // Change code above this line
 // }
@@ -26,14 +25,14 @@ console.log('Hello');
 // const newResyltat = add ("JavaScript is in my blood", 10);
 // console.log("Suma gravirovky: ",newResyltat)
 // const newResyltat1 = add ("Web-development is creative work", 40);
-// console.log("Suma gravirovky: ",newResyltat1) 
+// console.log("Suma gravirovky: ",newResyltat1)
 
 // ---------------------------------------------------------------------------------------------------------////
 
 // ---------------------------------------------------------------------------------------------------------////
 
 // Термин slug - это человеко-понятный уникальный идентификатор, который используется в веб-разработке для создания читабельных URL-адесов.
-// Например, вместо того чтобы пользователь увидел в адресной строке mysite.com / posts / 1q8fh74tx, можно сделать slug из названия статьи. 
+// Например, вместо того чтобы пользователь увидел в адресной строке mysite.com / posts / 1q8fh74tx, можно сделать slug из названия статьи.
 // В результате адрес получится более приятным для восприятия: mysite.com / posts / arrays -for-begginers.
 //                 Внимание            Slug это всегда строка в нижнем регистре, слова которой разделены тире.
 // Напиши функцию slugify(title) которая принимает заголовок статьи, параметр title, и возвращает slug, созданный из этой строки.
@@ -47,12 +46,10 @@ console.log('Hello');
 // •	Вызов slugify("Ten secrets of JavaScript") возвращает "ten-secrets-of-javascript"
 // •	Вызов slugify("How to become a JUNIOR developer in TWO WEEKS") возвращает "how-to-become-a-junior-developer-in-two-weeks"
 
-
 // const add = function slugify(title)  {
 //     // Change code below this line
-  
-//   return title.toLowerCase().split(" ").join("-")
 
+//   return title.toLowerCase().split(" ").join("-")
 
 //     // Change code above this line
 // }
@@ -64,7 +61,7 @@ console.log('Hello');
 
 // ---------------------------------------------------------------------------------------------------------////
 
-// Напиши функцию makeArray(firstArray, secondArray, maxLength) для создания нового массива со всеми элементами двух 
+// Напиши функцию makeArray(firstArray, secondArray, maxLength) для создания нового массива со всеми элементами двух
 // исходных firstArray и secondArray.Параметр maxLength содержит максимально допустимую длину нового массива.
 // Если количество элементов нового массива больше maxLength, функция должна вернуть копию массива
 // Вызов makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4) возвращает ["Mango", "Poly", "Houston", "Ajax"]
@@ -74,9 +71,8 @@ console.log('Hello');
 
 // const add = function makeArray(firstArray, secondArray, maxLength) {
 //     // Change code below this line
-  
-//   return firstArray.concat(secondArray).slice(0, maxLength)
 
+//   return firstArray.concat(secondArray).slice(0, maxLength)
 
 //     // Change code above this line
 // }
@@ -84,7 +80,7 @@ console.log('Hello');
 // const newResyltat = add (["Mango", "Poly"], ["Ajax", "Chelsea"], 3);
 // console.log(newResyltat)
 // const newResyltat1 = add (["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3);
-// console.log(newResyltat1)  
+// console.log(newResyltat1)
 
 // ---------------------------------------------------------------------------------------------------------////
 
@@ -94,7 +90,7 @@ console.log('Hello');
 // lastThreeEls - массив из трёх последних элементов
 
 // const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
-	
+
 // 	// Change code below this line
 // 	const firstTwoEls = fruits.slice(0, 2);
 // 	console.log(firstTwoEls)
@@ -110,7 +106,6 @@ console.log('Hello');
 // Напиши функцию calculateTotal(number), которая принимает целое число(параметр number) и возвращает сумму всех
 // целых чисел от единицы и до этого числа.Например, если number равно 3, то сумма это 1 + 2 + 3, то есть 6.
 
-
 // const add = function calculateTotal(number) {
 //  // Change code below this line
 //   let total = 0;
@@ -121,7 +116,7 @@ console.log('Hello');
 //   return total;
 // }
 // const newResyltat = add(3);
-// console.log("Resyltat:", newResyltat) 
+// console.log("Resyltat:", newResyltat)
 
 // ---------------------------------------------------------------------------------------------------------////
 
@@ -140,7 +135,7 @@ console.log('Hello');
 
 // ---------------------------------------------------------------------------------------------------------////
 
-// Напиши функцию calculateTotalPrice(order), которая принимает один параметр order - массив чисел, и рассчитывает 
+// Напиши функцию calculateTotalPrice(order), которая принимает один параметр order - массив чисел, и рассчитывает
 // общую сумму его элементов.Общая сумма элементов должна сохраняться в переменной total, которая возвращается,
 // как результат работы функции.
 // Тесты
@@ -150,7 +145,6 @@ console.log('Hello');
 // Вызов функции calculateTotalPrice([412, 371, 94, 63, 176]) возвращает 1116
 // Вызов функции calculateTotalPrice() со случайным массивом возвращает правильное значениех чисел от единицы и до этого числа.
 // Например, если number равно 3, то сумма это 1 + 2 + 3, то есть 6.
-
 
 // const add = function calculateTotalPrice(order) {
 //   let total = 0;
@@ -162,13 +156,13 @@ console.log('Hello');
 //     return total;
 // }
 // const newResyltat = add ([12, 85, 37, 4, 85, 37, 4, 85, 37, 4]);
-// console.log("total:", newResyltat) 
+// console.log("total:", newResyltat)
 
 // ---------------------------------------------------------------------------------------------------------////
 
 // ---------------------------------------------------------------------------------------------------------////
 
-//Напиши функцию findLongestWord(string) которая принимает произвольную строку состоящую только из слов разделённых 
+//Напиши функцию findLongestWord(string) которая принимает произвольную строку состоящую только из слов разделённых
 //пробелом(параметр string) и возвращает самое длинное слово в этой строке.
 
 //Тесты
@@ -188,9 +182,9 @@ console.log('Hello');
 //     }
 //     return biggestWord;
 // }
-        
+
 // const newResyltat = add ("The quick brown fox jumped over the lazy dog");
-// console.log("resalt:", newResyltat) 
+// console.log("resalt:", newResyltat)
 
 // ---------------------------------------------------------------------------------------------------------////
 // ---------------------------------------------------------------------------------------------------------////
@@ -214,9 +208,9 @@ console.log('Hello');
 //   // Change code above this line
 //   return numbers;
 // }
-        
+
 //  const newResyltat = add (14, 17);
-//  console.log("resalt:", newResyltat) 
+//  console.log("resalt:", newResyltat)
 
 // ---------------------------------------------------------------------------------------------------------////
 
@@ -239,7 +233,7 @@ console.log('Hello');
 //    // Change code below this line
 //       const masiv = [];
 //       for (let i = 0; i < numbers.length; i += 1) {
-//           console.log(numbers[i]);  
+//           console.log(numbers[i]);
 //           if (numbers[i] > value) {
 //               masiv.push(numbers[i]);
 //           }
@@ -248,7 +242,7 @@ console.log('Hello');
 //   // Change code above this line
 // }
 //   const newResyltat = add ([1, 2, 3, 4, 5], 3);
-//   console.log("resalt:", newResyltat) 
+//   console.log("resalt:", newResyltat)
 
 // ---------------------------------------------------------------------------------------------------------////
 
@@ -284,13 +278,13 @@ console.log('Hello');
 // }
 
 //   const newResyltat = add ([1, 2, 3], [2, 4]);
-//   console.log("resalt:", newResyltat) 
+//   console.log("resalt:", newResyltat)
 
 // ---------------------------------------------------------------------------------------------------------////
 
 // ---------------------------------------------------------------------------------------------------------////
 
-// // Напиши функцию getEvenNumbers(start, end) которая возвращает массив всех чётных чисел от start до end. 
+// // Напиши функцию getEvenNumbers(start, end) которая возвращает массив всех чётных чисел от start до end.
 // Чётным считается число которое делится на 2 без остатка(10 % 2 === 0).
 
 // Тесты
@@ -315,7 +309,7 @@ console.log('Hello');
 //   }
 
 //    const newResyltat = add (2, 5);
-//    console.log("resalt:", newResyltat) 
+//    console.log("resalt:", newResyltat)
 
 // ---------------------------------------------------------------------------------------------------------////
 
@@ -341,33 +335,33 @@ console.log('Hello');
 // 	if(array[i] === value){
 // 		return true;}
 //     }
-	
+
 //      return false;
 //   // Change code above this line
 // }
 
 //    const newResyltat = add ([1, 2, 3, 4, 5], 3);
-//    console.log("resalt:", newResyltat) 
+//    console.log("resalt:", newResyltat)
 
 // ---------------------------------------------------------------------------------------------------------////
 
 // ---------------------------------------------------------------------------------------------------------////
 
-// Если будет время решите задачку из codewars: преобразовать строку в новую строку, где каждый символ в новой строке 
-// соответствует  "(", если этот символ появляется только один раз в исходной строке или ")", если этот символ появляется 
-// более одного раза в исходной строке. Игнорируйте использование заглавных букв при определении дубликата символа.
-//  Примеры "din"      =>  "(((";  "recede"   =>  "()()()"
+//  Если будет время решите задачку из codewars: преобразовать строку в новую строку, где каждый символ в новой строке
+//  соответствует  "(", если этот символ появляется только один раз в исходной строке или ")", если этот символ появляется
+//  более одного раза в исходной строке. Игнорируйте использование заглавных букв при определении дубликата символа.
+//   Примеры "din"      =>  "(((";  "recede"   =>  "()()()"
 
-// const word = "Automobile";
+// const word = 'Automobile';
 // const splitedWord = word.split('');
-// let decodedWord = "";
+// let decodedWord = '';
 
-// splitedWord.forEach(x => { decodedWord += splitedWord.filter(z => z === x).length > 1 ? "{" : "}" });
+// splitedWord.forEach(x => {
+//     decodedWord += splitedWord.filter(z => z === x).length > 1 ? '(' : ')';
+// });
 
-// console.log(decodedWord, 'result')
+// console.log(decodedWord, 'result');
 
 // ---------------------------------------------------------------------------------------------------------////
-
-
 
 console.log('Modul2');
